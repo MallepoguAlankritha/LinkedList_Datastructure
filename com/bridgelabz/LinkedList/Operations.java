@@ -64,12 +64,23 @@ public class Operations {
     /*
     Created a method to insert after searching.
     */
-    public static void insertAfterSearchNode() {
+    public static LinkedList insertAfterSearchNode() {
         LinkedList linkedList= addDataAtStart();
         Node newNode = new Node(40);
         Node previousNode = linkedList.searchNodeAt(30, newNode);
         System.out.println("Before");
         linkedList.print();
+		return linkedList;
     }
-
+    /*
+    Created a method to delete after searching.
+    */
+    public static void deleteAfterNodeAfterSearchNode() {
+        System.out.println("Before");
+        LinkedList linkedList = insertAfterSearchNode();
+        System.out.println("after");
+        linkedList.deleteANode(40);
+        linkedList.print();
+    }
 }
+
