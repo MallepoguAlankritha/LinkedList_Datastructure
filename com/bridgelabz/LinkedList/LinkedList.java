@@ -1,7 +1,7 @@
 package com.bridgelabz.LinkedList;
 public class LinkedList {
-	 Node head;
-	    Node tail;
+	 static Node head;
+	    static Node tail;
 
 	    public Node push(int data) {
 	        Node newNode = new Node(data);
@@ -16,7 +16,7 @@ public class LinkedList {
 	        return newNode;
 	    }
 
-	    public void print() {
+	    public static void print() {
 	        if (head == null) {
 	            System.out.println("Linked List is Empty");
 	        } else {
@@ -31,13 +31,13 @@ public class LinkedList {
 	        }
 	    }
 
-	    public void append(int data) {
+	    public static void append(int data) {
 	        Node newNode = new Node(data);
 	        if (head == null) {
 	            head = newNode;
 	            tail = newNode;
 	        } else {
-	            this.tail.next = newNode;
+	            tail.next = newNode;
 	            tail = newNode;
 	        }
 	    }
