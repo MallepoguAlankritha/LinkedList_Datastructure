@@ -42,6 +42,15 @@ public class Operations {
 	         linkedList.pop();
 	         linkedList.print();
 	     }
-	 }
+	     /*
+	     Created a method to delete last node.
+	      */
+	      public static void deleteLastNode() {
+	          LinkedList linkedList = addDataAtStart();
+	          linkedList.popLast();
+	          linkedList.print();
+	      }
+	  }
+	 
 	
 	

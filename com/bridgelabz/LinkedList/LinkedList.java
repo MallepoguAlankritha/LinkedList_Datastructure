@@ -45,6 +45,14 @@ public class LinkedList {
         public void pop() {
             this.head = this.head.next;
         }
+        public void popLast() {
+            Node tempNode= head;
+            while(!tempNode.next.equals(tail)){
+                tempNode=tempNode.next;
+            }
+            this.tail = tempNode;
+            tempNode.next =null;
+        }
     }
     
     
